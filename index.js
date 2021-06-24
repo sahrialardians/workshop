@@ -13,7 +13,7 @@ app.listen(PORT, () => {
 });
 
 //GET all list
-app.get("/product/listall", (req, res) => {
+app.get("/product/products", (req, res) => {
     res.json(Products);
 });
 
