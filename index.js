@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-var PORT = env.process.PORT || 5000;
+var PORT = process.env.PORT || 5000;
 
 var Products = require("./product.json");
 
