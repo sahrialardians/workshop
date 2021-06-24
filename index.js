@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+var PORT = env.process.PORT || 5000;
 
 var Products = require("./product.json");
 
@@ -7,8 +8,8 @@ app.get('/', (req, res) => {
     res.send('Simple rest api');
 });
 
-app.listen(5000, () => {
- console.log("Server running on port 5000");
+app.listen(PORT, () => {
+ console.log("Server running on " + PORT);
 });
 
 //GET all list
